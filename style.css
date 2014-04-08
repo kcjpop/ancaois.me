@@ -1,0 +1,25 @@
+body {
+    background-color: #444;
+    color: #eee;
+    font-family: "Raleway", serif;
+    font-weight: 300;
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+}
+
+.ui.main.page {
+    margin-top: 10%;
+}
+
+.ui.header {
+    font-weight: 300;
+}
+
+.popup {
+    cursor: pointer;
+    border-bottom: 1px dotted #aaa;
+}
