@@ -23,3 +23,7 @@ a {
     cursor: pointer;
     border-bottom: 1px dotted #aaa;
 }
+
+.code {
+    font-size: 0.8em;
+}
