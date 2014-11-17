@@ -2,19 +2,19 @@
 <html>
 <head>
 	<title>An Cao</title>
-	
+
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css">
 	<link href='//fonts.googleapis.com/css?family=Raleway:300|Roboto:300' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 	<header></header>
-	
+
 	<main class="ui main page grid">
 		<div class="row">
 			<div class="column">
@@ -22,13 +22,12 @@
 				<h4 class="ui header">Hello! Terve! Hallo! Xin chào!</h4>
 
 				<div class="ui basic segment">
-					<p><i class="user icon"></i> Full-stack web developer living in Oulu, Finland</p>
-					<p><i class="code icon"></i> 
-						<span class="popup" data-content="Laravel 4, Composer">PHP</span>, 
-						<span class="popup" data-content="Vanilla, Node.js, BackboneJS, AngularJS, etc.">JavaScript</span>
-						and 
-						<span class="popup" data-content="Redis, Memcached, MongoDB, etc.">other cool stuff</span></p>
-					<p><i class="magic icon"></i> Clean, well-documented, green-light tested and not only <span class="popup" data-content="Yes, I mean Vagrant">&rdquo;work on my machine&ldquo;</span> code</p>
+					<p><i class="user icon"></i> Web developer living in Oulu, Finland</p>
+					<p><i class="code icon"></i>
+						<span class="popup" data-content="Laravel 4, Composer">PHP</span>,
+                        <span class="popup" data-content="MeteorJS">JavaScript/CoffeeScript</span>
+                        and
+						<span class="popup" data-content="Haskell">&lambda; for fun</span>
 					<p><i class="book icon"></i> <a href="./cv.pdf" target="_blank">Résumé</a></p>
 					<p><i class="mail icon"></i> <code class="code">kcj.pop.com {{@}} gmail {{.}} com</code></p>
 					<p><i class="twitter icon"></i> <a href="https://twitter.com/kcjpop" target="_blank">/kcjpop</a></p>
@@ -37,7 +36,7 @@
 			</div>
 		</div>
 	</main>
-	
+
 	<footer></footer>
 
 <script>
@@ -54,9 +53,13 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js"></script>
 	<script>
-$(function() {
-	$('.popup').popup();
-});
+(function($) {
+    'use strict';
+
+    $(function() {
+        $('span.popup').popup();
+    });
+}(jQuery));
 	</script>
 </body>
 </html>
