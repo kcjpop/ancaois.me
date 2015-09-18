@@ -1,29 +1,14 @@
-body {
-    background-color: #444;
-    color: #eee;
-    font-family: "Raleway", serif;
-    font-weight: 300;
-}
-
-a {
-    color: #ddd;
-    text-decoration: none;
-    border-bottom: 1px dotted #ccc;
-}
-
-.ui.main.page {
-    margin-top: 10%;
-}
-
-.ui.header {
-    font-weight: 300;
-}
-
-.popup {
-    cursor: pointer;
-    border-bottom: 1px dotted #aaa;
-}
-
-.code {
-    font-size: 0.8em;
+body { background-color: #444; color: #eee }
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *= "pure-u"] { font-family: monospace }
+a { color: #ddd; text-decoration: none; border-bottom: 1px dotted #ccc }
+p { line-height: 1.5em }
+.wrapper { padding: 1em }
+.section { margin: 50px auto }
+@media (min-width:768px) {
+    .wrapper { padding-left: 35% }
 }

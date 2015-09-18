@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>An Cao</title>
+    <title>An Cao</title>
 
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css">
-	<link href='//fonts.googleapis.com/css?family=Raleway:300|Roboto:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-	<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<header></header>
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-2-3">
+            <div class="wrapper">
+                <header>
+                    <h1>An Cao</h1>
+                    <h3>Hello! Terve! Hallo! Xin chào!</h3>
+                </header>
+                <main>
+                    <div class="section">
+                        <p><i class="ion-person"></i> Fancy stuff hobbyist in <a href="https://www.openstreetmap.org/search?query=Oulu#map=12/65.0124/25.4682" target="_blank">Oulu, Finland</a></p>
+                        <p><i class="ion-code"></i>
+                            <span>PHP</span>,
+                            <span>JavaScript/LiveScript</span>
+                            and
+                            <span>some &lambda; for fun</span>
+                        </p>
+                    </div>
 
-	<main class="ui main page grid">
-		<div class="row">
-			<div class="column">
-				<h1 class="ui red header">An Cao</h1>
-				<h4 class="ui header">Hello! Terve! Hallo! Xin chào!</h4>
-
-				<div class="ui basic segment">
-					<p><i class="user icon"></i> Web developer living in Oulu, Finland</p>
-					<p><i class="code icon"></i>
-						<span class="popup" data-content="Laravel 4, Composer">PHP</span>,
-                        <span class="popup" data-content="MeteorJS">JavaScript/CoffeeScript</span>
-                        and
-						<span class="popup" data-content="Haskell">&lambda; for fun</span>
-					<p><i class="book icon"></i> <a href="./cv.pdf" target="_blank">Résumé</a></p>
-					<p><i class="mail icon"></i> <code class="code">kcj.pop.com {{@}} gmail {{.}} com</code></p>
-					<p><i class="twitter icon"></i> <a href="https://twitter.com/kcjpop" target="_blank">/kcjpop</a></p>
-					<p><i class="github icon"></i> <a href="https://github.com/kcjpop" target="_blank">/kcjpop</a></p>
-				</div>
-			</div>
-		</div>
-	</main>
-
-	<footer></footer>
+                    <div class="section">
+                        <p><i class="ion-email"></i> kcj.pop.com <i class="ion-at"></i> gmail &middot; com</p>
+                        <p><i class="ion-social-twitter"></i> <a href="https://twitter.com/kcjpop" target="_blank">/kcjpop</a></p>
+                        <p><i class="ion-social-github"></i> <a href="https://github.com/kcjpop" target="_blank">/kcjpop</a></p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -47,19 +49,6 @@
 
   ga('create', 'UA-41016147-2', 'ancaois.me');
   ga('send', 'pageview');
-
 </script>
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js"></script>
-	<script>
-(function($) {
-    'use strict';
-
-    $(function() {
-        $('span.popup').popup();
-    });
-}(jQuery));
-	</script>
 </body>
 </html>
