@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js && mv _site/* ."
+    "build": "node build.js && cp -r _site/* ."
   },
   "repository": {
     "type": "git",
