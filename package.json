@@ -1,0 +1,32 @@
+{
+  "name": "kcjpop.github.io",
+  "version": "1.0.0",
+  "description": "My personal homepage",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.0.3",
+    "metalsmith": "^2.1.0",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-drafts": "0.0.1",
+    "metalsmith-layouts": "^1.4.2",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-prism": "^2.1.0",
+    "metalsmith-static": "0.0.5",
+    "prismjs": "^1.2.0"
+  },
+  "devDependencies": {
+    "metalsmith-date-formatter": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kcjpop/kcjpop.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "http://ancaois.me"
+}

@@ -1,0 +1,22 @@
+body { font-size: 1.1em; background-color: rgb(239, 239, 239); color: rgb(102, 102, 102) }
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *= "pure-u"] { font-family: monospace }
+h1,
+h2,
+h3 { font-weight: 300 }
+a { padding-bottom: 3px; color: #222; text-decoration: none; border-bottom: 1px dotted #ccc }
+p { line-height: 1.6em }
+li { margin: 1em auto; }
+code { padding: 2px 4px; font-size: .8rem; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; }
+blockquote { border-left: 5px solid #ddd; padding-left: 10px; }
+.wrapper { padding: 1em; max-width: 768px; margin: 0px auto; }
+.section { margin: 50px auto }
+.post-date { text-align: right; color: #bbb; }
+.logo { padding: 20px; font-size: 2em; background-color: #555; display: block; color: #eee; text-align: center; position: fixed; top: 20px; left: 20px; }
+code[class*=language-],
+pre[class*=language-] { font-family: 'Fira Mono', monospace; font-size: .9em }
+pre[class*=language-]>code[data-language] { overflow: auto }
