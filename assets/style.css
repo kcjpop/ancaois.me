@@ -17,6 +17,9 @@ blockquote { border-left: 5px solid #ddd; padding-left: 10px; }
 .section { margin: 50px auto }
 .post-date { text-align: right; color: #bbb; }
 .logo { text-transform: uppercase; z-index: 2; padding: 20px; font-size: 2em; background-color: #555; display: block; color: #eee; text-align: center; position: fixed; top: 20px; left: 20px; }
+.footer {margin-top: 50px;text-align: center; font-size: .9rem; color: #bbb;}
+.footer a {color: #bbb}
+.footer a:hover {color: #222}
 code[class*=language-],
 pre[class*=language-] { font-family: 'Fira Mono', monospace; font-size: .9em }
 pre[class*=language-]>code[data-language] { overflow: auto }
