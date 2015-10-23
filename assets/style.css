@@ -16,7 +16,10 @@ blockquote { border-left: 5px solid #ddd; padding-left: 10px; }
 .wrapper { padding: 1em; max-width: 768px; margin: 0px auto; }
 .section { margin: 50px auto }
 .post-date { text-align: right; color: #bbb; }
-.logo { padding: 20px; font-size: 2em; background-color: #555; display: block; color: #eee; text-align: center; position: fixed; top: 20px; left: 20px; }
+.logo { text-transform: uppercase; z-index: 2; padding: 20px; font-size: 2em; background-color: #555; display: block; color: #eee; text-align: center; position: fixed; top: 20px; left: 20px; }
 code[class*=language-],
 pre[class*=language-] { font-family: 'Fira Mono', monospace; font-size: .9em }
 pre[class*=language-]>code[data-language] { overflow: auto }
+@media (max-width:768px) {
+    .logo { padding: 10px; font-size: 1.5em; top: 0; left: 0; width: 100%; }
+}
