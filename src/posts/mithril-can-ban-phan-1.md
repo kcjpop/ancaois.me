@@ -3,6 +3,7 @@ title: "MithrilJS căn bản: Phần 1"
 slug: mithril-can-ban-phan-1
 date: 2015-10-22
 layout: post.html
+language: vi
 ---
 ## Linh tinh một chút
 Mình không phải là dân viết JS chuyên nghiệp nên gần như không có dùng framework nào hết. Vài năm trước có nghía sơ qua Backbone, cũng có thử dùng chung với RequireJS này nọ. Cảm nhận thì Backbone đơn giản, dễ học, vào thẳng vấn đề, nhưng cũng vì đơn giản quá nên rất khó để viết cho đúng. Sau này có [MarionetteJS](http://marionettejs.com/) là framework dựa trên nền Backbone cải tiến lên. Mình chỉ nghe tiếng chứ công việc cũng không yêu cầu nên cũng không tìm hiểu nhiều. Rồi Ember, Knockout, Angular, etc. nổi lên. Rằng hay thì thật là hay, mà tính mình không thích cái gì ai cũng xài nên vẫn jQuery (có gì đó không đúng).

@@ -25,7 +25,7 @@ Metalsmith(__dirname)
   }))
   .use(markdown({ langPrefix: 'language-' }))
   .use(permalinks({
-    pattern: ':slug'
+    pattern: ':language/:slug'
   }))
   .use(dates({
     dates: [
