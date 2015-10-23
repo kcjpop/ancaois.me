@@ -32,7 +32,10 @@ Metalsmith(__dirname)
       {key: 'date', format: 'DD/MM/YYYY'}
     ]
   }))
-  .use(layouts({engine: 'handlebars'}))
+  .use(layouts({
+    engine: 'handlebars',
+    partials: 'layouts/el'
+  }))
   .use(prism())
   .build(function (err, posts) {
     if (err) throw err
