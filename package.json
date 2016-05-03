@@ -1,7 +1,7 @@
 {
   "name": "kcjpop.github.io",
   "version": "1.0.0",
-  "description": "My personal homepage",
+  "description": "An Cao personal homepage",
   "main": "index.js",
   "dependencies": {
     "handlebars": "^4.0.3",
@@ -13,13 +13,12 @@
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-prism": "^2.1.0",
     "metalsmith-static": "0.0.5",
+    "metalsmith-date-formatter": "^1.0.2",
     "prismjs": "^1.2.0"
   },
   "devDependencies": {
-    "metalsmith-date-formatter": "^1.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js && cp -r _site/* ."
   },
   "repository": {
