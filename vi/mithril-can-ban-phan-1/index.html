@@ -21,15 +21,15 @@
         <link rel="stylesheet" href="/style.css"></head>
 <body>
     <div><a class="logo" href="/">An</a></div>
-    <div class="wrapper">
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <section class="section">
-                    <header>
-                        <h1>MithrilJS căn bản: Phần 1</h1>
-                        <h3 class="post-date">22/10/2015</h3>
-                    </header>
-                    <main><h2 id="linh-tinh-m-t-ch-t">Linh tinh một chút</h2>
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-sm-1-5"></div>
+        <div class="pure-u-1 pure-u-sm-3-5">
+            <section class="section">
+                <header>
+                    <h1>MithrilJS căn bản: Phần 1</h1>
+                    <h3 class="post-date">22/10/2015</h3>
+                </header>
+                <main><h2 id="linh-tinh-m-t-ch-t">Linh tinh một chút</h2>
 <p>Mình không phải là dân viết JS chuyên nghiệp nên gần như không có dùng framework nào hết. Vài năm trước có nghía sơ qua Backbone, cũng có thử dùng chung với RequireJS này nọ. Cảm nhận thì Backbone đơn giản, dễ học, vào thẳng vấn đề, nhưng cũng vì đơn giản quá nên rất khó để viết cho đúng. Sau này có <a href="http://marionettejs.com/">MarionetteJS</a> là framework dựa trên nền Backbone cải tiến lên. Mình chỉ nghe tiếng chứ công việc cũng không yêu cầu nên cũng không tìm hiểu nhiều. Rồi Ember, Knockout, Angular, etc. nổi lên. Rằng hay thì thật là hay, mà tính mình không thích cái gì ai cũng xài nên vẫn jQuery (có gì đó không đúng).</p>
 <p>Sau này do công việc, viết jQuery mải miết cũng cảm thấy đời đen tối. Code trở nên rối nùi, khó bảo trì, và phát triển tính năng mới quá nản. Mình quyết định tìm một framework/library dung lượng nhỏ, có thể gắn vào một phần nào đó của trang HTML (HTML là do back-end trả về). Đặc biệt hỗ trợ virtual DOM thì tốt (nghĩ chắc là nhanh, haha).</p>
 <h2 id="mithril-">Mithril?</h2>
@@ -229,14 +229,13 @@ m(&#39;table.pure-table&#39;, [
 <p>Hi vọng qua bài hướng dẫn này bạn sẽ thấy một lựa chọn khác, nhỏ gọn, code dễ thương, khuyến khích FP và hiệu suất tốt. </p>
 <p>Nếu có thắc mắc bạn có thể tham gia hỏi đáp trên <a href="https://gitter.im/lhorie/mithril.js">Gitter của Mithril</a> (khuyến khích vì ở đây có rất nhiều người giỏi) hoặc tìm mình trên Twitter.</p>
 </main>
-                    <footer class="footer">
-                      <p>
-                        <i class="icon-social-twitter"></i> <a class="footer__social-link" href="https://twitter.com/kcjpop" target="_blank">kcjpop</a>
-                        <i class="icon-social-github"></i> <a class="footer__social-link" href="https://github.com/kcjpop" target="_blank">kcjpop</a>
-                      </p>
-                    </footer>
-                </section>
-            </div>
+                <footer class="footer">
+                  <p>
+                    <i class="icon-social-twitter"></i> <a class="footer__social-link" href="https://twitter.com/kcjpop" target="_blank">kcjpop</a>
+                    <i class="icon-social-github"></i> <a class="footer__social-link" href="https://github.com/kcjpop" target="_blank">kcjpop</a>
+                  </p>
+                </footer>
+            </section>
         </div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
