@@ -19,7 +19,8 @@
   "devDependencies": {
   },
   "scripts": {
-    "build": "node build.js && cp -r _site/* ."
+    "build": "node build.js && stylus style.styl -o _site/style.css && cp -r _site/* .",
+    "start": "stylus -w style.styl -o _site/style.css"
   },
   "repository": {
     "type": "git",
