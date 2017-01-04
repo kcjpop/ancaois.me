@@ -1,4 +1,4 @@
 require('./src')
-  .build(function (err, posts) {
+  .build(function (err) {
     if (err) throw err
   })
