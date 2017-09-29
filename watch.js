@@ -1,16 +1,13 @@
-var watch = require('metalsmith-watch')
-var serve = require('metalsmith-serve')
+const watch = require('metalsmith-watch')
+const serve = require('metalsmith-serve')
 
 require('./src')
   .use(watch({
     paths: {
-      '${source}/**/*': true,
-      'layouts/**/*': '**/*'
+      'src/**/*': '**/*'
     }
   }))
-  .use(serve({
-    port: 8081
-  }))
-  .build(function (err) {
+  .use(serve({ port: 8081 }))
+  .build(err => {
     if (err) throw err
   })

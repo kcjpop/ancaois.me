@@ -1,27 +1,30 @@
 {
   "name": "kcjpop.github.io",
   "version": "1.0.0",
-  "description": "An Cao personal homepage",
-  "main": "index.js",
-  "dependencies": {
-    "handlebars": "^4.0.3",
+  "description": "My personal page",
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "handlebars": "^4.0.10",
     "metalsmith": "^2.1.0",
-    "metalsmith-collections": "^0.7.0",
+    "metalsmith-collections": "^0.9.0",
     "metalsmith-date-formatter": "^1.0.2",
     "metalsmith-drafts": "0.0.1",
-    "metalsmith-layouts": "^1.4.2",
+    "metalsmith-html-minifier": "^2.2.0",
+    "metalsmith-layouts": "^1.8.1",
     "metalsmith-markdown": "^0.2.1",
-    "metalsmith-permalinks": "^0.4.0",
-    "metalsmith-static": "0.0.5"
-  },
-  "devDependencies": {
+    "metalsmith-permalinks": "^0.5.0",
     "metalsmith-serve": "0.0.7",
-    "metalsmith-stylus": "^2.0.1",
+    "metalsmith-static": "0.0.5",
     "metalsmith-watch": "^1.0.3",
-    "stylus": "^0.54.5"
+    "rimraf": "^2.6.2"
   },
   "scripts": {
-    "build": "node build.js && cp -r _site/* . && rm styles/el -rf",
+    "build": "rimraf dist/* -rf && node build.js",
     "start": "node watch.js"
   },
   "repository": {
@@ -29,6 +32,6 @@
     "url": "https://github.com/kcjpop/kcjpop.github.io.git"
   },
   "author": "An Cao",
-  "license": "MIT",
-  "homepage": "http://ancaois.me"
+  "license": "MPL-2.0",
+  "homepage": "https://ancaois.me"
 }

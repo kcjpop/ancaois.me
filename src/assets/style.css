@@ -1,0 +1,9 @@
+a {
+  color: #e7040f;
+}
+
+.hljs {
+  border-radius: .2rem;
+  font-size: .875rem;
+  font-family: "CamingoCode", "Fira Mono", "Source Code Pro", "Ubuntu Mono", monospace;
+}

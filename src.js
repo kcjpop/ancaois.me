@@ -1,21 +1,19 @@
-var path = require('path')
-var Metalsmith = require('metalsmith')
-var asset = require('metalsmith-static')
-var dates = require('metalsmith-date-formatter')
-var layouts = require('metalsmith-layouts')
-var markdown = require('metalsmith-markdown')
-var permalinks = require('metalsmith-permalinks')
-var collections = require('metalsmith-collections')
-var stylus = require('metalsmith-stylus')
+const path = require('path')
+const Metalsmith = require('metalsmith')
+const asset = require('metalsmith-static')
+const dates = require('metalsmith-date-formatter')
+const layouts = require('metalsmith-layouts')
+const markdown = require('metalsmith-markdown')
+const permalinks = require('metalsmith-permalinks')
+const collections = require('metalsmith-collections')
 
-var OUTPUT_PATH = '_site'
+const OUTPUT_PATH = path.resolve(__dirname, 'dist')
 
 module.exports = Metalsmith(__dirname)
-  .source('src')
+  .source(path.resolve(__dirname, 'src/content'))
   .destination(OUTPUT_PATH)
-  // Custom langPrefix option needed as markdown uses 'lang-' by default:
   .use(asset({
-    src: 'assets',
+    src: './src/assets',
     dest: '.'
   }))
   .use(collections({
@@ -32,13 +30,11 @@ module.exports = Metalsmith(__dirname)
   }))
   .use(dates({
     dates: [
-      {key: 'date', format: 'DD/MM/YYYY'}
+      { key: 'date', format: 'DD/MM/YYYY' }
     ]
   }))
   .use(layouts({
     engine: 'handlebars',
-    partials: 'layouts/el'
-  }))
-  .use(stylus({
-    filename: path.join(__dirname, 'src/styles/index.styl')
+    directory: path.resolve(__dirname, 'src/layouts'),
+    partials: path.resolve(__dirname, 'src/layouts/el')
   }))

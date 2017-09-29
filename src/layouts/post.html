@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    {{> head }}
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="bg-near-white sans-serif dark-gray">
+    <div class="fixed top-1 left-1"><a class="w3 h3 bg-dark-gray white fw7 f4 br1 no-underline dib flex items-center justify-center" href="/">An</a></div>
+    <div class="mw8 center">
+        <section>
+            <header>
+                <h1 class="f2 system-serif dark-red">{{ title }}</h1>
+                <h3 class="gray tr f6">{{ date }}</h3>
+            </header>
+            <main class="lh-copy f4">{{{ contents }}}</main>
+            <footer class="footer">
+              <p>
+                <i class="icon-social-twitter"></i> <a class="footer__social-link" href="https://twitter.com/kcjpop" target="_blank">kcjpop</a>
+                <i class="icon-social-github"></i> <a class="footer__social-link" href="https://github.com/kcjpop" target="_blank">kcjpop</a>
+              </p>
+            </footer>
+        </section>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad()</script>
+    {{> ga }}
+</body>
+</html>
