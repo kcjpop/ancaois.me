@@ -1,9 +1,46 @@
 a {
-  color: #e7040f;
+  color: #1b6ec2;
 }
 
 .hljs {
-  border-radius: .2rem;
-  font-size: .875rem;
-  font-family: "CamingoCode", "Fira Mono", "Source Code Pro", "Ubuntu Mono", monospace;
+  border-radius: 0.15rem;
+  font-size: 1rem;
+  font-family: 'Fira Mono', 'Source Code Pro', 'Ubuntu Mono', monospace;
+}
+
+svg {
+  max-width: 100%;
+}
+
+.content code:not([class~='hljs']) {
+  font-size: 1rem;
+  background-color: #dee2e6;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.15rem;
+}
+
+.content blockquote {
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0.25rem 0.5rem 0.25rem 2rem;
+  border-left: 0.5rem solid #dee2e6;
+  position: relative;
+}
+
+.content blockquote p {
+  position: relative;
+  z-index: 1;
+}
+
+.content blockquote::after {
+  z-index: 0;
+  content: '“ ”';
+  font-family: serif;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 3.5rem;
+  color: #ced4da;
+  font-weight: 700;
+  transform: translateY(50%) rotate(15deg);
 }
