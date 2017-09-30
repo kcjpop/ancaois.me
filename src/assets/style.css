@@ -44,3 +44,9 @@ svg {
   font-weight: 700;
   transform: translateY(50%) rotate(15deg);
 }
+
+.content h4,
+.content h5,
+.content h6 {
+  font-weight: 600;
+}
