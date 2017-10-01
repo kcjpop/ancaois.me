@@ -1,4 +1,3 @@
-require('./src')
-  .build(err => {
-    if (err) throw err
-  })
+require('./metalsmith').build(err => {
+  if (err) throw err
+})

@@ -3,10 +3,10 @@ const Metalsmith = require('metalsmith')
 const asset = require('metalsmith-static')
 const dates = require('metalsmith-date-formatter')
 const layouts = require('metalsmith-layouts')
-const markdown = require('metalsmith-markdown')
 const permalinks = require('metalsmith-permalinks')
 const collections = require('metalsmith-collections')
 const wordcount = require('metalsmith-word-count')
+const markdown = require('metalsmith-markdown-remarkable')
 
 const OUTPUT_PATH = path.resolve(__dirname, 'dist')
 
@@ -29,7 +29,14 @@ module.exports = Metalsmith(__dirname)
       }
     })
   )
-  .use(markdown({ langPrefix: 'language-' }))
+  .use(
+    markdown('full', {
+      breaks: true,
+      quotes: '“”‘’',
+      langPrefix: 'language-',
+      typographer: true
+    })
+  )
   .use(
     permalinks({
       pattern: ':language/:slug'
