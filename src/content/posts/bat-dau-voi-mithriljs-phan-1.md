@@ -67,7 +67,7 @@ Trước tiên, cần nói về vnode. Với mithril thì vnode là một JavaSc
 
 ```javascript 
 /**
- * selector   (String|Object)                 REQUIRED
+ * selector   (String|Object) REQUIRED
  * attributes (Object)                
  * children   (Vnode[]|String|Number|Boolean)
  */
@@ -102,7 +102,7 @@ m('h1.title', {
 // Nếu showTitle != null thì
 // <h1 class="title" title="Hello" style="display: block;"></h1>
 ```
-`attributes` cũng được dùng để khai báo các lifecycle và event handlers, nhưng chúng ta sẽ đề cập đế chúng sau.
+`attributes` cũng được dùng để khai báo các lifecycle và event handlers, nhưng chúng ta sẽ đề cập đến chúng sau.
 `chidlren` để bạn khai báo nội dung của vnode. Nó có thể là `string`, `number`, `boolean` hay một mảng các vnode khác. Ví dụ:
 ```javascript
 // <div>Hello World</div>
@@ -280,7 +280,7 @@ const List = {
           )
         ),
         m('tbody', this.items.map(item =>
-            m('tr',
+            m('tr', { key: item.id },
               m('td', item.id),
               m('td', item.name),
               m('td', `${item.price} gil`),
@@ -345,7 +345,7 @@ const Cart = {
 }
 ```
 
-Xong rồi. Bạn có thể xem toàn bộ code và thử click lung tung ở đây https://jsfiddle.net/6ednpwy6/. Bạn có thể cải tiến bản demo này, thêm vài tính năng đơn giản cho nó, chẳng hạn như xóa sản phẩm ra khỏi giỏ hàng (và xem tổng giá trị đơn hàng tự động thay đổi như thế nào), hay xử lý thêm khi một sản phẩm được thêm vào giỏ hàng nhiều lần. *Bạn's biết's đấy's, giới's hạn's chỉ's là's bầu's trời's, Sếp's muôn's năm's.*
+Xong rồi. Bạn có thể xem toàn bộ code và thử click lung tung ở đây [https://jsfiddle.net/jdhqcpx5/](https://jsfiddle.net/jdhqcpx5/). Bạn có thể cải tiến bản demo này, thêm vài tính năng đơn giản cho nó, chẳng hạn như xóa sản phẩm ra khỏi giỏ hàng (và xem tổng giá trị đơn hàng tự động thay đổi như thế nào), hay xử lý thêm khi một sản phẩm được thêm vào giỏ hàng nhiều lần. *Bạn's biết's đấy's, giới's hạn's chỉ's là's bầu's trời's, Sếp's muôn's năm's.*
 
 ## Tạm kết
 
