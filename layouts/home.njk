@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<section class="mb3 pa1 mw8 center">
+  <p class="lh-db fw6">I'm a Viet, yet living in Finland.</p>
+  <p class="lh-db fw6">I weave webs (both front and back-end) for food, sometimes for fun.</p>
+  <p class="lh-db fw6">I'm quite fluent in Vietnamese (duh), English, JavaScript, PHP, and familiar with React, Redux, Webpack, and ReasonML.</p>
+  <p class="lh-db fw6">I'm learning Clojure, LISP, and Finnish.</p>
+  <p class="lh-db fw6 flex flex-column flex-row-ns">
+    <span>[ <a class="dark-red" href="/projects">Side Projects</a> ]</span>
+    <span>[ <a class="dark-red" href="https://github.com/kcjpop" target="_blank">Github</a> ]</span>
+    <span>[ <a class="dark-red" href="https://twitter.com/kcjpop" target="_blank">Twitter</a> ]</span>
+    <span>[ <a class="dark-red" href="https://boardgamegeek.com/user/kcjpop" target="_blank">Boardgamegeek</a> ]</span>
+  </p>
+</section>
+
+<section class="mb3 pa1 mw8 center">
+  <h2 class="lh-copy f2 dark-gray mb3">I wrote</h2>
+  <ul>
+    {% for post in articles %}
+    <li class="lh-db">
+      <a class="dark-red" href="{{ post.path.replace('md', 'html') }}">{{ post.title }}</a>
+      <span class="ml1">{{ post.date.toLocaleString() }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

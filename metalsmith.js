@@ -1,9 +1,7 @@
 const path = require('path')
 const Metalsmith = require('metalsmith')
 const asset = require('metalsmith-static')
-const dates = require('metalsmith-date-formatter')
 const layouts = require('metalsmith-layouts')
-const permalinks = require('metalsmith-permalinks')
 const collections = require('metalsmith-collections')
 const wordcount = require('metalsmith-word-count')
 const markdown = require('metalsmith-markdown-remarkable')
@@ -21,7 +19,7 @@ module.exports = Metalsmith(__dirname)
   )
   .use(
     collections({
-      lastArticles: {
+      articles: {
         pattern: 'posts/*.md',
         sortBy: 'date',
         refer: false,
@@ -31,28 +29,19 @@ module.exports = Metalsmith(__dirname)
   )
   .use(
     markdown('full', {
+      html: true,
       breaks: true,
       quotes: '“”‘’',
       langPrefix: 'language-',
       typographer: true,
     })
   )
-  .use(
-    permalinks({
-      pattern: ':language/:slug',
-    })
-  )
-  .use(
-    dates({
-      dates: [{ key: 'date', format: 'DD/MM/YYYY' }],
-    })
-  )
   .use(wordcount())
   .use(
     layouts({
-      engine: 'handlebars',
-      directory: path.resolve(__dirname, 'src/layouts'),
-      partials: path.resolve(__dirname, 'src/layouts/el'),
+      engineOptions: {
+        path: path.resolve(__dirname, 'layouts'),
+      },
     })
   )
   .build(err => {
