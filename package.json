@@ -1,6 +1,6 @@
 {
-  "name": "kcjpop.github.io",
-  "version": "1.0.0",
+  "name": "ancaois.me",
+  "version": "2.0.0",
   "description": "My personal page",
   "watch": {
     "build:dev": {
@@ -9,6 +9,7 @@
     }
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
@@ -33,14 +34,11 @@
     "rimraf": "^2.6.2"
   },
   "scripts": {
-    "build": "rimraf dist/* -rf && node build.js",
-    "build:dev": "node build.js",
-    "start": "npm-watch build:dev",
-    "serve": "http-server dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kcjpop/kcjpop.github.io.git"
+    "build": "rimraf dist/* -rf && node metalsmith.js",
+    "build:dev": "node metalsmith.js",
+    "watch": "npm-watch build:dev",
+    "serve": "http-server dist/ -s",
+    "start": "concurrently npm:watch npm:serve"
   },
   "author": "An Cao",
   "license": "MPL-2.0",

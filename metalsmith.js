@@ -16,7 +16,7 @@ module.exports = Metalsmith(__dirname)
   .use(
     asset({
       src: './src/assets',
-      dest: '.'
+      dest: '.',
     })
   )
   .use(
@@ -25,8 +25,8 @@ module.exports = Metalsmith(__dirname)
         pattern: 'posts/*.md',
         sortBy: 'date',
         refer: false,
-        reverse: true
-      }
+        reverse: true,
+      },
     })
   )
   .use(
@@ -34,17 +34,17 @@ module.exports = Metalsmith(__dirname)
       breaks: true,
       quotes: '“”‘’',
       langPrefix: 'language-',
-      typographer: true
+      typographer: true,
     })
   )
   .use(
     permalinks({
-      pattern: ':language/:slug'
+      pattern: ':language/:slug',
     })
   )
   .use(
     dates({
-      dates: [{ key: 'date', format: 'DD/MM/YYYY' }]
+      dates: [{ key: 'date', format: 'DD/MM/YYYY' }],
     })
   )
   .use(wordcount())
@@ -52,6 +52,9 @@ module.exports = Metalsmith(__dirname)
     layouts({
       engine: 'handlebars',
       directory: path.resolve(__dirname, 'src/layouts'),
-      partials: path.resolve(__dirname, 'src/layouts/el')
+      partials: path.resolve(__dirname, 'src/layouts/el'),
     })
   )
+  .build(err => {
+    if (err) throw err
+  })
