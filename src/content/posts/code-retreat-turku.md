@@ -50,9 +50,9 @@ Then we could write a function `gameTick(cell)` to see if this cell would be ali
 
 Or when we were in a session where no control statements was allowed. I overthought and tried to make an array of neighbors cells and use its length to compare. Thanks to my teammate when he pointed out that I could just use the `neighbors` attribute instead.
 
-But as said, it is very tempting to make things complicated and get lost in your train of thoughts. I think TDD helps in this case, as it slows us down first, forces us to write tests to understand more about the problem before coming up with the solutions.
+But as said, it is very tempting to make things complicated and get lost in your train of thoughts. I think TDD helps in this case, as it slows us down first, forces us to write tests to understand more about the problem before coming up with solutions.
 
-### In Summary
+## In Summary
 
 Before I left, I was asked 3 questions. I only remember the most interesting one:
 
