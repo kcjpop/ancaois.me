@@ -29,7 +29,7 @@
 
 html { font-size: 17px; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 48em) {
   html { font-size: 18px; }  
 }
 
@@ -45,6 +45,9 @@ html { font-size: 17px; }
 
 .fw6 { font-weight: 600; }
 .fw7 { font-weight: 700; }
+@media screen and (min-width: 48em) {
+  .fw6-ns { font-weight: 600; }
+}
 
 .f1 { font-size: calc(1rem + 4 * var(--font-size-scale)); }
 .f2 { font-size: calc(1rem + 3 * var(--font-size-scale)); }
