@@ -40,7 +40,7 @@ I learnt about the concept of pair programming many years ago but never had the 
 
 ### Trap to Programmer’s Mind
 
-We programmers can fall into the trap of overthinking quite easily. There were not one but three times I over-engineered. At first when I read about the rules of Game of Life, I thought about how to construct the game grid, how to calculate the number of alive neighbors of a cell, etc. Yet it turned out we could start with the simplest case, where a cell is presented as a per-calculated object.
+We programmers can fall into the trap of overthinking quite easily. There were not one but three times I over-engineered. At first when I read about the rules of Game of Life, I thought about how to construct the game grid, how to calculate the number of alive neighbors of a cell, etc. Yet it turned out we could start with the simplest case, where a cell is presented as a pre-calculated object.
 
 ```js
 const cell = { neighbors: 3, isAlive: true }
