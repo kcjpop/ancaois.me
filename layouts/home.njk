@@ -21,7 +21,7 @@
     {% for post in articles %}
     <li class="lh-db">
       <a class="dark-red" href="{{ post.path.replace('md', 'html') }}">{{ post.title }}</a>
-      <span class="ml1">{{ post.date.toLocaleString() }}</span>
+      <span class="ml1">{{ post.date.toLocaleDateString() }}</span>
     </li>
     {% endfor %}
   </ul>
