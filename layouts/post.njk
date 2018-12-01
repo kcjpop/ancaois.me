@@ -3,7 +3,7 @@
 {% block content %}
 <section class="mb3 pa1 mw8 center">
   <h1 class="lh-copy f2 dark-red mb3 fw7">{{ title }}</h1>
-  <p class="mb3">Posted on: {{ date.toLocaleString() }}</p>
+  <p class="mb3">Posted on: {{ date.toLocaleDateString() }}</p>
   
   <div class="lh-copy post">{{ contents | safe }}</div>
 </section>
