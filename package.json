@@ -4,7 +4,10 @@
   "description": "My personal page",
   "watch": {
     "build:dev": {
-      "patterns": ["src/**/*", "layouts/**/*"],
+      "patterns": [
+        "src/**/*",
+        "layouts/**/*"
+      ],
       "extensions": "md,css,html,js,json,njk"
     }
   },
@@ -31,7 +34,7 @@
     "metalsmith-static": "0.0.5",
     "metalsmith-word-count": "0.0.4",
     "npm-watch": "^0.3.0",
-    "nunjucks": "^3.1.4",
+    "nunjucks": "3.1.7",
     "rimraf": "^2.6.2"
   },
   "scripts": {
